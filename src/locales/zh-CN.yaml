@@ -458,8 +458,8 @@ app:
       cancel: 取消
       mmu_maintenance: MMU维护
       recover_state: 修复MMU状态
-      edit_gate_map: 编辑料丝
-      edit_ttg_map: 映射工具/料丝
+      edit_gate_map: 编辑耗材
+      edit_ttg_map: 映射工具/耗材
       sync: 同步
       unsync: 取消同步
       off: 关闭
@@ -472,18 +472,18 @@ app:
       release: 释放
       reset: 重置
     title:
-      headline: 多材料单元
+      headline: Mmu 多色
       mmu_maintenance: MMU维护
       recover_state: 修复MMU状态（错误恢复）
-      edit_gate_map: 编辑料丝（编辑料仓映射）
-      edit_ttg_map: 映射工具/料丝（编辑TTG映射）
+      edit_gate_map: 编辑耗材（编辑料仓映射）
+      edit_ttg_map: 映射工具/耗材（编辑TTG映射）
     label:
       clog_detection: 堵塞检测
       tool_mapping: 工具映射
       spoolman: 料盘管理
       spoolman_id: 料盘ID
       choose_spool: 选择料盘
-      filament_name: 料丝名称
+      filament_name: 耗材名称
       load_speed: 加载速度覆盖
       material: 材料
       reset: 重置
@@ -506,7 +506,7 @@ app:
       cancel: 取消
       gate: 料仓
       endless_spool: 无尽料盘 ∞
-      filament_info: 料丝信息
+      filament_info: 耗材信息
       slicer_expects: 切片器期望
       spoolman_last_used: 上次使用
       spoolman_never: 从未
@@ -527,13 +527,13 @@ app:
       no_matching_spool: 未找到匹配的料盘
       are_you_sure: 您确定吗？
       bad_temperature: 温度超出范围
-      filament_available: 料仓中有可用料丝
-      filament_unknown: 未知料丝状态（请设置）
-      filament_empty: 料丝不可用
+      filament_available: 料仓中有可用耗材
+      filament_unknown: 未知耗材状态（请设置）
+      filament_empty: 耗材不可用
       maintenance_intro: 直接管理特定的MMU功能和选择性配置。
       recover_intro: 这是一个低级恢复，用于当Happy Hare与您的MMU不同步时。建议先尝试自动恢复，但这将需要纠正当前工具或料仓（或者在A型MMU上，您可以卸载并归位选择器）。
       no_custom_controls: 无自定义控件
-      filament_loaded: 料丝是完全加载到挤出机还是完全卸载？
+      filament_loaded: 耗材是完全加载到挤出机还是完全卸载？
       gate_bypass: 料仓设置为旁路！
       no_gate: 必须选择一个料仓
       no_position: 尝试恢复位置
@@ -545,13 +545,13 @@ app:
       warning_prefix: 警告-
       no_active_spool: 无活动料盘
       no_spool_id: 无料盘ID
-      recover_filament_position: 恢复料丝位置
+      recover_filament_position: 恢复耗材位置
       multi_color: 这看起来是使用%{numTools}个工具的多材料单挤出机打印。您可能需要检查工具映射
       single_color: 这看起来是单色打印，但您没有在MMU上选择旁路。您可能需要检查所选工具
       map_slicer_tools: 为打印映射切片器工具到MMU料仓
       map_tools: 映射工具到MMU料仓
       tool_not_used: 工具%{tool}在此打印中未使用，选择默认映射
-      mismatch: 可能的料丝不匹配
+      mismatch: 可能的耗材不匹配
       color: 颜色
       material: 材料
       temperature: 温度
@@ -559,11 +559,11 @@ app:
       no_slicer_info: 无切片器信息，为%{tool}选择默认映射
       select_tool: 选择要映射的工具，然后从列表中选择料仓
     setting:
-      large_filament_status: 大型料丝状态
+      large_filament_status: 放大耗材状态
       show_clog_detection: 显示堵塞检测
-      show_details: 显示料丝详情
+      show_details: 显示耗材详情
       show_ttg_map: 显示TTG映射
-      show_logos: 显示徽标
+      show_logos: 显示LOGO
       show_unavailable_spool_color: 显示不可用料盘颜色
   printer:
     state:
