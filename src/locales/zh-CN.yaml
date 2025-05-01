@@ -440,6 +440,131 @@ app:
       number_of_copies: 副本数量
       print_time: 打印时长
       unknown_jobs: 未知任务
+  mmu:
+    btn:
+      check_all_gates: 检查所有料仓
+      check_gate: 检查料仓
+      select: 选择
+      eject: 弹出
+      load: 加载
+      load_ext: 加载挤出机
+      unload: 卸载
+      unload_ext: 卸载挤出机
+      preload: 预加载
+      print_stats: 打印统计
+      recover: 恢复
+      sync_spoolman: 同步料盘管理
+      unlock: 解锁
+      cancel: 取消
+      mmu_maintenance: MMU维护
+      recover_state: 修复MMU状态
+      edit_gate_map: 编辑料丝
+      edit_ttg_map: 映射工具/料丝
+      sync: 同步
+      unsync: 取消同步
+      off: 关闭
+      on: 开启
+      home: 归位
+      up: 上
+      down: 下
+      move: 移动
+      grip: 夹紧
+      release: 释放
+      reset: 重置
+    title:
+      headline: 多材料单元
+      mmu_maintenance: MMU维护
+      recover_state: 修复MMU状态（错误恢复）
+      edit_gate_map: 编辑料丝（编辑料仓映射）
+      edit_ttg_map: 映射工具/料丝（编辑TTG映射）
+    label:
+      clog_detection: 堵塞检测
+      tool_mapping: 工具映射
+      spoolman: 料盘管理
+      spoolman_id: 料盘ID
+      choose_spool: 选择料盘
+      filament_name: 料丝名称
+      load_speed: 加载速度覆盖
+      material: 材料
+      reset: 重置
+      temperature: 温度
+      motor_sync: 挤出机电机同步
+      extruder_only: 仅挤出机
+      mmu_motors: MMU电机
+      extruder_tx: 工具Tx
+      selector: 选择器
+      leds: LED灯
+      ui_visual: UI视觉
+      animation: 动画
+      config: 配置
+      enable: 启用
+      unknown: 未知
+      skip_automap: 跳过自动映射
+      all_tools: 所有工具
+      ok: 确定
+      save: 保存
+      cancel: 取消
+      gate: 料仓
+      endless_spool: 无尽料盘 ∞
+      filament_info: 料丝信息
+      slicer_expects: 切片器期望
+      spoolman_last_used: 上次使用
+      spoolman_never: 从未
+      spoolman_today: 今天
+      spoolman_yesterday: 昨天
+      spoolman_days_ago: '%{days}天前'
+    tooltip:
+      empty: 空
+      color: 颜色
+      spoolid: 料盘ID
+    msg:
+      reset_gate_map_confirmation: 这将把整个料仓映射重置为'mmu_parameters.cfg'中定义的默认值，如果没有默认值则重置为空映射
+      reset_ttg_map_confirmation: 这将把整个工具到料仓的映射和无尽料盘组重置为'mmu_parameters.cfg'中定义的默认值，如果没有默认值则重置为默认的1:1映射
+      select_gate: 选择您想要编辑的料仓/料盘信息
+      spoolman_off: 料盘管理支持在Happy Hare中为"%{mode}"。将料盘ID分配给料仓的功能已禁用
+      spoolman_other: 料盘管理支持为"%{mode}"。您可以选择分配料盘ID或直接编辑料仓属性
+      spoolman_pull: 料盘管理支持处于"%{mode}"模式。禁用了大多数料仓属性的本地编辑。直接在料盘管理数据库中分配料盘/料仓映射或使用MMU_SPOOLMAN命令
+      no_matching_spool: 未找到匹配的料盘
+      are_you_sure: 您确定吗？
+      bad_temperature: 温度超出范围
+      filament_available: 料仓中有可用料丝
+      filament_unknown: 未知料丝状态（请设置）
+      filament_empty: 料丝不可用
+      maintenance_intro: 直接管理特定的MMU功能和选择性配置。
+      recover_intro: 这是一个低级恢复，用于当Happy Hare与您的MMU不同步时。建议先尝试自动恢复，但这将需要纠正当前工具或料仓（或者在A型MMU上，您可以卸载并归位选择器）。
+      no_custom_controls: 无自定义控件
+      filament_loaded: 料丝是完全加载到挤出机还是完全卸载？
+      gate_bypass: 料仓设置为旁路！
+      no_gate: 必须选择一个料仓
+      no_position: 尝试恢复位置
+      no_tool: 必须选择一个工具
+      remap: 这将把料仓重新映射到%{tool}
+      set_gate: 设置为当前料仓
+      set_tool: 设置为当前工具
+      tool_bypass: 工具设置为旁路！
+      warning_prefix: 警告-
+      no_active_spool: 无活动料盘
+      no_spool_id: 无料盘ID
+      recover_filament_position: 恢复料丝位置
+      multi_color: 这看起来是使用%{numTools}个工具的多材料单挤出机打印。您可能需要检查工具映射
+      single_color: 这看起来是单色打印，但您没有在MMU上选择旁路。您可能需要检查所选工具
+      map_slicer_tools: 为打印映射切片器工具到MMU料仓
+      map_tools: 映射工具到MMU料仓
+      tool_not_used: 工具%{tool}在此打印中未使用，选择默认映射
+      mismatch: 可能的料丝不匹配
+      color: 颜色
+      material: 材料
+      temperature: 温度
+      no_gate_data: 无料仓数据
+      no_slicer_info: 无切片器信息，为%{tool}选择默认映射
+      select_tool: 选择要映射的工具，然后从列表中选择料仓
+    setting:
+      large_filament_status: 大型料丝状态
+      show_clog_detection: 显示堵塞检测
+      show_details: 显示料丝详情
+      show_ttg_map: 显示TTG映射
+      show_logos: 显示徽标
+      show_unavailable_spool_color: 显示不可用料盘颜色
   printer:
     state:
       busy: 处理中
